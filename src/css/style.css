@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #fafafa;
+    line-height: 1.5;
+    position: relative;
+    margin: 0;
+}
+
+img {
+    display: block;
+
+
+
+}
+
+
+.search-field {
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+}
+
+.load-field {
+    
+    text-align: center;
+    background-color: #212121;
+    
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    
+}
+
+.search-form {
+    
+    width: 280px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}
+
+.search-form input {
+    height: 30px;
+    border-radius: 4px;
+
+}
+
+.search-button {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.load-button {
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+   
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #212121;
+}
+
+
+
+
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 400px;
+    }
+}
+
+
+
+
+
+.gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 84px;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .photo-card {
+        flex-basis: calc((100% - 30px) / 4);
+
+        border: 1px solid black;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .photo-card {
+        flex-basis: 100%;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.gallery__image {
+    max-width: 100%;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #212121;
+    /* height: 90px; */
+}
+
+.gallery__icon {
+    display: block;
+    fill: #fafafa;
+    stroke: #fafafa;
+}
+
+
+.info-item {
+    margin: 8px;
+    display: flex;
+    flex-basis: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.thumb {
+    background-color: #000000;
+    height: 215px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
